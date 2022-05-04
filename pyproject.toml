@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "violencia_institucional"
+version = "0.1.0"
+description = ""
+authors = [
+    "Henrique <henrique.ajnbranco@gmail.com>",
+    "Tatiana <tatianadelpech@gmail.com>"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tika = "1.24"
+streamlit = "1.6.0"
+click = "8"
+nltk = "3.7"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
