@@ -24,6 +24,11 @@ pasta_raiz = pathlib.Path().absolute()
 
 for pdf in pdfs:
     if pdf != None:
+
+        # Salvar o arquivo PDF no servidor do Streamlit
+        with open(pasta_raiz / pdf.name, "wb") as f:
+            f.write(pdf.getbuffer())
+
         processo_txt = pdf.name.replace("pdf", "txt")
         arquivo_processo_txt = pasta_raiz / processo_txt
         if not arquivo_processo_txt.exists():
