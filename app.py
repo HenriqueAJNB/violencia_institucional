@@ -5,10 +5,14 @@ from collections import Counter
 
 import nltk
 import streamlit as st
+import tika
 from nltk.tokenize import wordpunct_tokenize
 from tika import parser
 
 from padroes import identificar
+
+# Iniciando servidor do Tika
+tika.initVM()
 
 nltk.download("punkt")
 nltk.download("stopwords")
